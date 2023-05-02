@@ -1,1 +1,2 @@
 # odin-landing-page
+The goal of this project is to create a landing page from scratch using the various skills recently acquired: CSS Foundations, Using the Box Model, the Flexbox layout, the Chrome DevTools and get the various elements of a landing page in the right place relative to the rest.
