@@ -1,16 +1,17 @@
 body {
     box-sizing: border-box;
-    height: 100vh;
-    padding:0;
+    /*height: 100vh;*/
+    padding: 0px;
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
 }
 
 ul {
     padding: 0;
-    margin: 0;
+    margin-top: 5px;
     list-style: none;
     display: flex;
     gap: 30px;
@@ -19,22 +20,28 @@ ul {
 a {
     text-decoration: none;
     color: rgb(77, 4, 196);
-    font-size: 24px;   
+    font-size: 24px;
+    font-style: italic;   
 }
 
 .footer a {
     font-size: 16px;
 }
 
+.header-top a:hover {
+    color:#f63127
+    
+}
+
 button {
     width: 120px;
     height: auto;
     padding: 8px;
-    margin: 8px;
-    border: 2px solid rgb(77, 4, 196);
+    margin: 0;
+    border: 4px solid rgb(77, 4, 196);
     border-radius: 10px;
     border-radius: 10px;
-    box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
+    box-shadow: 6px 8px 16px rgba(0, 0, 0, .06);
     color: whitesmoke;
     background-color:#f63127;
     font-size: 24px;
@@ -42,7 +49,7 @@ button {
 }
 
 img {
-    border: 2px solid rgb(77, 4, 196);
+    border: 4px solid rgb(77, 4, 196);
     border-radius: 10px;
     box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
 }
@@ -51,6 +58,15 @@ img {
     border: none;
     border-radius: none;
     box-shadow: none;
+    /*margin-left: 10px;*/
+}
+
+span {
+    color: rgb(77, 4, 196);
+}
+
+h2 {
+    text-align: center;
 }
 
 .header, .footer {
@@ -58,5 +74,84 @@ img {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    /*align-items: center;*/
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    /*gap: 10px;*/
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.header-hero {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.main-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgb(77, 4, 196);
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    
+}
+
+.quote {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-style: italic;
+    background-color: rgb(231, 247, 248);
+    text-align: center;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.quote-apply {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apply {
+    /*border: 2px solid red;*/
+    border-radius: 8px;
+    font-size: 24px;
+    /*width: 800px;
+    height: auto;*/
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    gap: 60px;
+    background-color: rgb(241, 184, 163);
+    
+}
